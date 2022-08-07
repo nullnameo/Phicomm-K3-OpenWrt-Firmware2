@@ -32,7 +32,7 @@ echo '=========Add dnsfilter source OK!========='
 
 echo '添加OpenClash'
 rm -rf package/lean/luci-app-openclash
-svn checkout https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
+svn checkout https://github.com/liuran001/openwrt-packages/tree/packages/luci-app-openclash package/lean/luci-app-openclash
 echo '=========Add OpenClash source OK!========='
 
 
@@ -51,6 +51,10 @@ rm -rf package/lean/k3screenctrl
 git clone https://github.com/yangxu52/k3screenctrl_build.git package/lean/k3screenctrl/
 echo '=========Replace k3screen drive plug OK!========='
 
+echo '添加ssr'
+rm -rf package/lean/luci-app-ssr-plus
+git clone https://github.com/liuran001/openwrt-packages/tree/packages/luci-app-ssr-plus package/lean/luci-app-ssr-plus
+echo '=========Add OpenClash source OK!========='
 
 echo '移除bcm53xx中的其他机型'
 sed -i '421,453d' target/linux/bcm53xx/image/Makefile
