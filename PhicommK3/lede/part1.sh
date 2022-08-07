@@ -52,8 +52,8 @@ git clone https://github.com/yangxu52/k3screenctrl_build.git package/lean/k3scre
 echo '=========Replace k3screen drive plug OK!========='
 
 echo '添加ssr'
-rm -rf package/lean/luci-app-ssr-plus
-git clone https://github.com/liuran001/openwrt-packages/tree/packages/luci-app-ssr-plus package/lean/luci-app-ssr-plus
+sed -i "/helloworld/d" "feeds.conf.default"
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 echo '=========Add OpenClash source OK!========='
 
 echo '移除bcm53xx中的其他机型'
