@@ -35,7 +35,7 @@ Phicomm K2P/K3 OpenWrt firmware Compile by Github Actions
 
 - DNSFilter (auto configuration no-ad)
 
-- ~~Bypass~~ (include xray-core only，support vmess,vless,trojan protocol)
+- Bypass (include xray-core only，support vmess,vless,trojan protocol)
 
 - ServerChan (Wechat Push)
 
@@ -54,6 +54,10 @@ Phicomm K2P/K3 OpenWrt firmware Compile by Github Actions
 - MWan3
 
 - Network Turbo ACC(base on new Qualcomm Short-FE)
+
+- SSR PLUS
+
+- 广告屏蔽大师 Plus+
 
 - Others
 
