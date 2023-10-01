@@ -20,11 +20,6 @@ echo '添加pass dependencies'
 sed -i '$a src-git passpack https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 echo '=========Add feed source OK!========='
 
-echo '添加bypass软件源'
-sed -i '$a src-git bypass https://github.com/kiddin9/openwrt-packages/luci-app-passwall2' feeds.conf.default
-cat feeds.conf.default |grep bypass
-echo '=========Add bypass source OK!========='
-
 echo '添加dnsfilter'
 rm -rf package/lean/luci-app-dnsfilter 
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/lean/luci-app-dnsfilter 
