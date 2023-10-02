@@ -27,6 +27,12 @@
 #cat package/base-files/files/bin/config_generate |grep system.ntp.server=
 #echo 'Alert NTP Settings OK!====================='
 
+
+echo 'Alter default kernel version'
+sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.15/g' target/linux/bcm53xx/Makefile
+cat target/linux/bcm53xx/Makefile |grep KERNEL_PATCHVER
+echo '=========Alert Kernel OK!========='
+
 echo '修改主机名'
 sed -i "s/hostname='OpenWrt'/hostname='Phicomm-K3'/g" package/base-files/files/bin/config_generate
 cat package/base-files/files/bin/config_generate |grep hostname=
