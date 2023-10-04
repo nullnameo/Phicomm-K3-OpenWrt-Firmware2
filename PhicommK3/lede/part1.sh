@@ -16,9 +16,9 @@
 #limitations under the License.
 #
 
-echo '添加pass dependencies'
-sed -i '$a src-git passpack https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-echo '=========Add feed source OK!========='
+#echo '添加pass dependencies'
+#sed -i '$a src-git passpack https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+#echo '=========Add feed source OK!========='
 
 
 echo '添加插件'
