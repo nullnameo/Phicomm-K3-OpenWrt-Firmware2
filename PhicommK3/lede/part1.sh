@@ -34,13 +34,13 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter package/lean/luci-app-dn
 echo '=========Add dnsfilter source OK!========='
 
 echo '添加用于过滤'
-git clone https://github.com/destan19/OpenAppFilter/tree/master/oaf package/lean/luci-app-oaf
+git clone https://github.com/destan19/OpenAppFilter package/lean/luci-app-oaf
 echo '=========Add dnsfilter source OK!========='
 
-echo '添加OpenClash'
-rm -rf package/lean/luci-app-openclash
-svn checkout https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-openclash
-echo '=========Add OpenClash source OK!========='
+#echo '添加OpenClash'
+#rm -rf package/lean/luci-app-openclash
+#svn checkout https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-openclash
+#echo '=========Add OpenClash source OK!========='
 
 
 echo '添加jerrykuku的argon-mod主题'
