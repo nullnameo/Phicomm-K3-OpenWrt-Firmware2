@@ -29,7 +29,7 @@
 
 
 echo 'Alter default kernel version'
-sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/g' target/linux/bcm53xx/Makefile
+sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.15/g' target/linux/bcm53xx/Makefile
 cat target/linux/bcm53xx/Makefile |grep KERNEL_PATCHVER
 echo '=========Alert Kernel OK!========='
 
