@@ -19,9 +19,13 @@
 echo '添加pass dependencies'
 sed -i '$a src-git passpack https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 echo '=========Add feed source OK!========='
+
+
 echo '添加插件'
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+git clone https://github.com/kenzok8/small package/lean
+git clone https://github.com/kenzok8/openwrt-packages package/lean
 echo '=========Add feed source OK!========='
 
 echo '添加dnsfilter'
