@@ -19,6 +19,10 @@
 echo '添加pass dependencies'
 sed -i '$a src-git passpack https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 echo '=========Add feed source OK!========='
+echo '添加插件'
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+echo '=========Add feed source OK!========='
 
 echo '添加dnsfilter'
 rm -rf package/lean/luci-app-dnsfilter 
